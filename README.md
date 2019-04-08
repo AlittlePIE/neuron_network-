@@ -1,2 +1,18 @@
-# neuron_network-
-this repository contains a serious of basic implements of neuron network by numpy
+# 一系列神经网络的实现
+## 文件说明 
+目前目录里有：
+1. 使用numpy实现基本神经网络，反向传播使用全批量梯度下降法（batch gradient decent），但是该方法里并没有添加偏置
+2. 使用numpy实现基本神经网络，在该网络中还使用了BN算法，反向传播使用小批量梯度下降法（Mini-batch gradient decent），但是该方法里仍没有添加偏置
+3. 使用numpy实现基本神经网络，在该网络中还使用了BN算法，反向传播使用小批量梯度下降法（Mini-batch gradient decent），该方法已添加偏置
+
+## 实现时部分代码出处
+1. BN算法：https://wiseodd.github.io/techblog/2016/07/04/batchnorm/
+2. 样本数据的预处理：来自《python神经网络编程》
+
+## 使用说明
+- 使用各个文件时，需要修改导入样本数据的路径即可
+
+## 缺点
+1. 不知偏置这样子设置是否正确，因为设置了偏置和没有设置偏置结果没有太大区别，一定要说区别就感觉加了偏置后更加稳定一点
+2. 除了加了偏置的实现，其他文件的实现没有注释
+3. 准确率提不上去，最高也只能到92%接近93%
