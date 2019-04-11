@@ -13,8 +13,8 @@ class NeuronNet:
         self.b_i_h = np.zeros(shape=(1, hidden_nodes))
         self.w_h_o = np.random.randn(hidden_nodes * output_nodes).reshape(hidden_nodes, output_nodes)
         self.b_h_o = np.zeros(shape=(1, output_nodes))
-        self.gamma = 1
-        self.beta = 0
+        self.gamma = np.ones(shape=(1, hidden_nodes))
+        self.beta = np.zeros(shape=(1, hidden_nodes))
         self.bn_params = {'bn_mean': 0, 'bn_var': 0}
 
     def Relu(self, inputs):
